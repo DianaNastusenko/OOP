@@ -1,0 +1,28 @@
+* {
+  padding:6;
+  margin:2;
+}
+
+.main
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  width: 300px;
+  border: 2px solid #64acf4;
+}
+
+.button {
+  padding: 7px;
+  background:#64acf4;
+  border:0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  position: relative;
+  right: -120px;
+}
+
+.table {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
