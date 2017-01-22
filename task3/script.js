@@ -16,6 +16,10 @@ $('[type="button"]').click(function () {
 function validation(user){
   //name validation
   var name = $("[id='name']").val();
+  if (!name) {
+    alert('Please input name!');
+    return false;
+  }
   var namePattern = /^[A-Z][a-zA-Z]+$/;
   if (namePattern.test(name)) {
     alert('Name has to consist only letters!');
@@ -32,15 +36,22 @@ function validation(user){
   
   //phone validation
   var phone = $("[id='phone']").val();
-  var phonePattern =  /^[0-9]{10}$/;  
+  var phonePattern =  /^[0-9]/;  
   if (!phonePattern.test(phone)){
    alert('Phone number must contain only numbers');
    return false;   
   }
   
+    //adress validation
+  var adress = $("[id='adress']").val();
+  if (!adress){
+   alert('Please input adress');
+   return false;   
+  }
+  
   //email validation
   var email = $("[id='email']").val();
-  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]$/;  
+  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;  
   if (!emailPattern.test(email)){
    alert('Please input email as example');
    return false;   
