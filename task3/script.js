@@ -34,13 +34,13 @@ function validation(user){
   var phone = $("[id='phone']").val();
   var phonePattern =  /^[0-9]{10}$/;  
   if (!phonePattern.test(phone)){
-   alert('Please input email as example');
+   alert('Phone number must contain only numbers');
    return false;   
   }
   
   //email validation
   var email = $("[id='email']").val();
-  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;  
+  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]$/;  
   if (!emailPattern.test(email)){
    alert('Please input email as example');
    return false;   
