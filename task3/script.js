@@ -20,8 +20,8 @@ function validation(user){
     alert('Please input name!');
     return false;
   }
-  var namePattern = /^[A-Z][a-zA-Z]+$/;
-  if (namePattern.test(name)) {
+  var namePattern = /^[A-z]+$/;
+  if (!namePattern.test(name)) {
     alert('Name has to consist only letters!');
     return false;
   }
